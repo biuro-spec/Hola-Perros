@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prerender": "node scripts/prerender.mjs",
+    "build:deploy": "npm run build && npm run prerender"
   },
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.2.11",
@@ -29,6 +31,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
+    "playwright": "^1.62.1",
     "sharp": "^0.34.5",
     "vite": "^8.0.12"
   }
